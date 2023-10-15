@@ -1,0 +1,43 @@
+package limitcalculator;
+import java.util.Scanner;
+public class CreditLimitCalculator {
+	
+		private int account_no = 0;
+		private double balance = 10000;
+		private double charges;
+		private double credits_paid;
+		private double credit_limit = 150000;
+
+		public CreditLimitCalculator() {
+			this(0, 10000, 100000, 90000, 150000);
+		}
+
+		public CreditCalculator(int account_no, double balance, double charges, double credits_paid, double credit_limit) {
+			this.account_no = account_no;
+			this.balance = balance;
+			this.charges = charges;
+			this.credits_paid = credits_paid;
+			this.credit_limit = credit_limit;
+		}
+
+		public void acceptData() {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter Details: ");
+			System.out.print("Enter Account No.: \t");
+			this.account_no = sc.nextInt();
+			System.out.print("Enter Balance: \t");
+			this.balance = sc.nextDouble();
+			System.out.print("Enter Charges: \t");
+			this.charges = sc.nextDouble();
+			System.out.print("Enter Credits Paid: \t");
+			this.credits_paid = sc.nextDouble();
+		}
+
+		public void calculate() {
+			double newBalance = this.balance + this.charges - this.credits_paid;
+			if(this.credit_limit>newBalance)
+				System.out.println("Within Limit");
+			else
+				System.out.println("Credit limit exceeded");
+		}
+	}

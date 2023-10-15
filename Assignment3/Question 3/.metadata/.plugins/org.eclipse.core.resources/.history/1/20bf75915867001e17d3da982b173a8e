@@ -1,0 +1,16 @@
+package com.sunbeaminfo.drivingcost;
+
+public class CarPoolSavingCal {
+		int tot_miles;
+		int cost_gallon;
+		int miles_gallon;
+		int park_fees;
+		int tolls_day;
+		public CarPoolSavingCal() {
+			
+			}
+			
+		
+		
+		
+}

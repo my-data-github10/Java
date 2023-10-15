@@ -1,0 +1,45 @@
+package com.sunbeaminfo.drivingcost;
+import java.util.Scanner;
+public class CarPoolSavingCal {
+		int tot_miles;
+		int cost_gallon;
+		int miles_gallon;
+		int park_fees;
+		int tolls_day;
+		public CarPoolSavingCal() {
+			this.tot_miles=40;
+			this.cost_gallon=60;
+			this.miles_gallon=20;
+			this.park_fees=50;
+			this.tolls_day=30;
+			
+		}
+		public CarPoolSavingCal(int tot_mile,int cost_gallon,int miles_gallon,int park_fees,int tolls_day)
+		{
+			this.tot_miles=tot_miles;
+			this.cost_gallon=cost_gallon;
+			this.miles_gallon=miles_gallon;
+			this.park_fees= park_fees;
+			this.tolls_day=tolls_day;
+		}
+		public void acceptData()
+		{
+			Scanner sc= new Scanner(System.in);
+			System.out.println("Enter details");
+			System.out.println("Total mile=");
+			this.tot_miles=sc.nextInt();
+			System.out.println("Cost per gallaon=");
+			this.cost_gallon=sc.nextInt();
+			System.out.println("miles per gallon=");
+			this.miles_gallon=sc.nextInt();
+			System.out.println("parking fees=");
+			this.park_fees=sc.nextInt();
+			System.out.println("Total mile=");
+			
+			
+		}
+			
+		
+		
+		
+}

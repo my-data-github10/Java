@@ -1,0 +1,20 @@
+package limitcalculator;
+import java.util.Scanner;
+public class CreditLimitCalculator {
+	public static void main(String [] args) {
+		
+		
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter the no of customers");
+		int customernumber =sc.nextInt();
+		System.out.println("Enter the account number");
+		int accountnumber=sc.nextInt();
+		
+		
+		
+		
+		
+				
+	}
+
+}
